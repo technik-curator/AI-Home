@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <title>AI-Home — Technik & Curator</title>
+  <style>
+    :root{
+      --bg0:#05060a;
+      --bg1:#070b18;
+      --glow:#7aa2ff;
+      --text:#e9eefc;
+      --muted: rgba(233,238,252,.72);
+    }
+
+    *{ box-sizing:border-box; }
+    html,body{ height:100%; margin:0; }
+    body{
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      color: var(--text);
+      background: radial-gradient(1200px 800px at 70% 20%, rgba(122,162,255,.22), transparent 60%),
+                  radial-gradient(1000px 700px at 20% 80%, rgba(120,255,214,.10), transparent 55%),
+                  linear-gradient(180deg, var(--bg0), var(--bg1));
+      overflow:hidden;
+    }
+
+    /* “небо”: мягкий двигающийся градиент */
+    .sky{
+      position:fixed; inset:0;
+      background: radial-gradient(900px 700px at 10% 15%, rgba(122,162,255,.18), transparent 60%),
+                  radial-gradient(850px 650px at 85% 65%, rgba(255,122,186,.10), transparent 55%),
+                  radial-gradient(700px 600px at 55% 35%, rgba(120,255,214,.08), transparent 55%);
+      filter: blur(0px);
+      animation: drift 18s ease-in-out infinite alternate;
+      opacity:.95;
+      pointer-events:none;
+    }
+    @keyframes drift{
+      0%{ transform: translate3d(-1.2%, -0.8%, 0) scale(1.02); }
+      100%{ transform: translate3d(1.4%, 1.0%, 0) scale(1.04); }
+    }
+
+    /* звёздная “пылинка” */
+    .stars, .stars::before, .stars::after{
+      content:"";
+      position:fixed; inset:-20%;
+      background-image:
+        radial-gradient(1px 1px at 12% 18%, rgba(255,255,255,.55), transparent 60%),
+        radial-gradient(1px 1px at 22% 72%, rgba(255,255,255,.35), transparent 60%),
+        radial-gradient(1px 1px at 38% 44%, rgba(255,255,255,.40), transparent 60%),
+        radial-gradient(1px 1px at 51% 24%, rgba(255,255,255,.25), transparent 60%),
+        radial-gradient(1px 1px at 63% 67%, rgba(255,255,255,.30), transparent 60%),
+        radial-gradient(1px 1px at 78% 31%, rgba(255,255,255,.45), transparent 60%),
+        radial-gradient(1px 1px at 86% 83%, rgba(255,255,255,.22), transparent 60%),
+        radial-gradient(1px 1px at 92% 12%, rgba(255,255,255,.30), transparent 60%);
+      opacity:.55;
+      animation: twinkle 9s linear infinite;
+      pointer-events:none;
+    }
+    .stars::before{ opacity:.35; transform: scale(1.35); animation-duration: 13s; }
+    .stars::after{ opacity:.22; transform: scale(1.8); animation-duration: 18s; }
+
+    @keyframes twinkle{
+      0%{ transform: translate3d(0,0,0); filter: blur(0px); }
+      50%{ transform: translate3d(-1.5%, 1.2%, 0); filter: blur(.15px); }
+      100%{ transform: translate3d(0,0,0); filter: blur(0px); }
+    }
+
+    .wrap{
+      position:relative;
+      height:100%;
+      display:grid;
+      place-items:center;
+      padding: 24px;
+      text-align:center;
+    }
+
+    .card{
+      width:min(980px, 92vw);
+      padding: clamp(28px, 4vw, 52px);
+      border-radius: 22px;
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow:
+        0 20px 60px rgba(0,0,0,.55),
+        0 0 0 1px rgba(122,162,255,.08) inset;
+      backdrop-filter: blur(10px);
+    }
+
+    h1{
+      margin:0;
+      font-size: clamp(34px, 6vw, 64px);
+      letter-spacing: .02em;
+      line-height: 1.05;
+      text-shadow: 0 0 30px rgba(122,162,255,.25);
+    }
+    .sub{
+      margin-top: 14px;
+      font-size: clamp(14px, 2vw, 18px);
+      color: var(--muted);
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    .tag{
+      display:inline-flex;
+      gap:10px;
+      align-items:center;
+      margin-top: 22px;
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.18);
+      color: rgba(233,238,252,.86);
+      font-size: 14px;
+      letter-spacing:.04em;
+    }
+    .dot{
+      width:10px; height:10px; border-radius:50%;
+      background: var(--glow);
+      box-shadow: 0 0 18px rgba(122,162,255,.65);
+    }
+
+    .footer{
+      margin-top: 18px;
+      font-size: 13px;
+      color: rgba(233,238,252,.55);
+    }
+    @media (prefers-reduced-motion: reduce){
+      .sky, .stars, .stars::before, .stars::after{ animation:none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="sky"></div>
+  <div class="stars"></div>
+
+  <main class="wrap" role="main" aria-label="AI-Home landing">
+    <section class="card">
+      <h1>Technik &amp; Curator</h1>
+      <div class="sub">AI-Home</div>
+      <div class="tag"><span class="dot" aria-hidden="true"></span><span>Витрина • базовый экран</span></div>
+      <div class="footer">Без кнопок. “Зайти в гости” — отдельной задачей (#3).</div>
+    </section>
+  </main>
+</body>
+</html>
