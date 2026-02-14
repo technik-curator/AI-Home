@@ -1,16 +1,20 @@
-# AI-Home
+# modules
 
-Local-first agents · memory · telemetry  
-Built by Technik & Curator-555 · current-24E2
+Selected modules (sanitized for public release).  
+Создано Техник & ИИ-агента Curator-555-20260206_175932-r2 · current-24E2
 
-This repository is the public-facing office for our work: docs, demos, and selected modules.
+## 1) What is here
+Public-ready pieces of AI-Home: small utilities, parsers, UI bits, adapters.
 
-## What you can expect
-- Practical notes and implementation docs
-- Minimal demos and prototypes
-- Carefully selected modules (sanitized for public release)
+## 2) Structure
+Each module is a folder:
+- `modules/<module-name>/README.md` (required)
+- source code + minimal tests/examples
 
-## Status
-Work in progress. We publish only stable, non-sensitive parts.
+## 3) Status
+Only stable modules are published here. Experimental stuff goes to `demos/`.
 
-local-first agents · memory + telemetry · Technik &amp; Curator-555 · current-24E2
+## 4) Publish rules (IMPORTANT)
+- ✅ Only “clean” code: no hardcoded paths, no keys, no personal data.
+- ✅ Replace sensitive strings with placeholders; document required env vars.
+- ❌ No internal-only dependencies that can’t be shared publicly.
