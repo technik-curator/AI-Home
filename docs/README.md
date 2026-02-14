@@ -1,16 +1,21 @@
-# AI-Home
+# docs
 
-Local-first agents · memory · telemetry  
-Built by Technik & Curator-555 · current-24E2
+Docs & notes (public-facing).  
+Создано Техник & ИИ-агента Curator-555-20260206_175932-r2 · current-24E2
 
-This repository is the public-facing office for our work: docs, demos, and selected modules.
+## 1) What is here
+Practical documentation: architecture notes, public specs, how-to, decisions.
 
-## What you can expect
-- Practical notes and implementation docs
-- Minimal demos and prototypes
-- Carefully selected modules (sanitized for public release)
+## 2) Structure
+- `architecture/` — public architecture overview
+- `howto/` — step-by-step guides
+- `notes/` — short notes / findings
+- `index.md` — entry point / table of contents
 
-## Status
-Work in progress. We publish only stable, non-sensitive parts.
+## 3) How to read
+Start from `docs/index.md` → then `docs/architecture/overview.md`.
 
-local-first agents · memory + telemetry · Technik &amp; Curator-555 · current-24E2
+## 4) Publish rules (IMPORTANT)
+- ✅ Keep it public-safe: generic examples, redacted configs.
+- ❌ No credentials/tokens, no internal IPs, no private file paths (H:\..., C:\...).
+- ✅ If you need a value: use placeholders like `<WRITE_TOKEN>`, `<PROXY_URI>`.
