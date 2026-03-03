@@ -2,7 +2,7 @@
 
 ## One-liner
 AI-Home / Bratets-D Console is an operator-led loop that turns endless chat into **verified artifacts** (patches, checks, reproducible results).
-
+Internal codename: Bratets-D Console
 ## The problem
 “Endless chat” produces:
 - no artifacts
