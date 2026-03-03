@@ -37,7 +37,7 @@ Smoke / health / version check:
 
 ## Demo (optional)
 60–90s GIF/video: **request → patch → smoke → result**
-- `assets/demo-loop.gif`
+- Demo (loop video): [Watch demo](assets/demo-loop.mp4)
 
 ## Cases (max 3)
 - [Case 001 — Telemetry encoding fix](cases/case-001-telemetry-encoding.md)
