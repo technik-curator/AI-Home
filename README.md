@@ -1,16 +1,52 @@
-# AI-Home
+# AI-Home / Bratets-D Console
 
-Local-first agents · memory · telemetry  
-Built by Technik & Curator-555 · current-24E2
+## One-liner
+AI-Home / Bratets-D Console is an operator-led loop that turns endless chat into **verified artifacts** (patches, checks, reproducible results).
 
-This repository is the public-facing office for our work: docs, demos, and selected modules.
+## The problem
+“Endless chat” produces:
+- no artifacts
+- no verification
+- no reproducibility
+- no engineer-friendly handoff
 
-## What you can expect
-- Practical notes and implementation docs
-- Minimal demos and prototypes
-- Carefully selected modules (sanitized for public release)
+## The solution
+An operator-led workflow:
+- **Artifacts**: patch / spec / runbook / logs
+- **Checks**: smoke / health / version / expected outputs
+- **Loop**: request → patch → smoke → result
 
-## Status
-Work in progress. We publish only stable, non-sensitive parts.
+## What we can contribute
+- **Operator loop + packaging**: convert requests into engineer-friendly deliverables (artifacts + checks).
+- **Modules & safe actions**: build scoped modules that do real work (safe-by-default, auditable).
+- **OpenClaw operator training**: how to drive an agent to produce real modules (not 3-line demos).
 
-local-first agents · memory + telemetry · Technik &amp; Curator-555 · current-24E2
+## Pilot proposal (1–2 scenarios)
+We run a pilot on **1–2 scenarios** and deliver an engineer-friendly package:
+- `SPEC.md` (contract, scope, acceptance)
+- `PATCH` (PR or FLAT zip)
+- `SMOKE.md` (commands + expected outputs)
+- `RUNBOOK.md` (operate / rollback / known issues)
+
+## Screens
+Console / workflow loop / artifacts:
+- ![Console](assets/screen-console.png)
+
+Smoke / health / version check:
+- ![Smoke Check](assets/smoke-check.png)
+
+## Demo (optional)
+60–90s GIF/video: **request → patch → smoke → result**
+- `assets/demo-loop.gif`
+
+## Cases (max 3)
+- [Case 001 — Telemetry encoding fix](cases/case-001-telemetry-encoding.md)
+- [Case 002 — FLAT patch nesting (404) fix](cases/case-002-flat-patch-nesting.md)
+- [Case 003 — Doctor smoke workflow](cases/case-003-doctor-smoke-workflow.md)
+
+## Contact
+Email: **s.tech...** *(replace with full email)*
+
+Open to relocation to US if sponsorship/transfer is possible.
+
+Создано Техник & ИИ-агента Curator-555-20260206_175932-r2 · current-24E2
