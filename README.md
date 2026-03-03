@@ -45,7 +45,7 @@ Smoke / health / version check:
 - [Case 003 — Doctor smoke workflow](cases/case-003-doctor-smoke-workflow.md)
 
 ## Contact
-Email: **s.tech...** *(replace with full email)*
+Email: **s.technik555@gmail.com**
 
 Open to relocation to US if sponsorship/transfer is possible.
 
