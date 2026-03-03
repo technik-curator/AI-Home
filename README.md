@@ -37,7 +37,7 @@ Smoke / health / version check:
 
 ## Demo (optional)
 60–90s GIF/video: **request → patch → smoke → result**
-- Demo (loop video): [Watch demo](assets/demo-loop.mp4)
+- Demo (60–90s MP4): [Download demo video](https://raw.githubusercontent.com/technik-curator/AI-Home/main/assets/demo-loop.mp4)
 
 ## Cases (max 3)
 - [Case 001 — Telemetry encoding fix](cases/case-001-telemetry-encoding.md)
