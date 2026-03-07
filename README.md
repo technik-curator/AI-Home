@@ -37,13 +37,14 @@ Smoke / health / version check:
 
 ## Demo (optional)
 60–90s GIF/video: **request → patch → smoke → result**
-- - Demo video (YouTube): https://youtu.be/RWaUpynOBA4
+- Demo (loop video): [Watch on YouTube](https://youtu.be/RWaUpynOBA4)
 
 ## Cases (max 3)
 - [Case 001 — Telemetry encoding fix](cases/case-001-telemetry-encoding.md)
 - [Case 002 — FLAT patch nesting (404) fix](cases/case-002-flat-patch-nesting.md)
 - [Case 003 — Doctor smoke workflow](cases/case-003-doctor-smoke-workflow.md)
 - One-pager (PDF): [Download](assets/AI-Home%20one-pager%202026-03-03%20ONEPAGE.pdf)
+
 Email: **s.technik555@gmail.com**
 
 Open to relocation to US if sponsorship/transfer is possible.
